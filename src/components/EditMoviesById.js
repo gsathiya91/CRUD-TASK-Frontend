@@ -10,7 +10,7 @@ function EditMoviesById() {
    const navigate= useNavigate();
     useEffect(() => {
         const fetchHandler = async () => {
-            await axios.get(`https://movies-app-crud-backend.herokuapp.com/getallmovies/${id}`)
+            await axios.get(`https://movie-app-crud-mern.herokuapp.com/getallmovies/${id}`)
                 .then(res => res.data).then(data => setInputs(data));
         }
         fetchHandler()
@@ -19,7 +19,7 @@ function EditMoviesById() {
     const handleSubmit =async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.put(`https://movies-app-crud-backend.herokuapp.com/updatemovies/${id}`, {
+            const response = await axios.put(`https://movie-app-crud-mern.herokuapp.com/updatemovies/${id}`, {
                 movieName: String(inputs.movieName),
                 rating: Number(inputs.rating),
                 cast: String(inputs.cast),

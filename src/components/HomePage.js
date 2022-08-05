@@ -13,7 +13,7 @@ export default function Cards() {
         navigate("/login");
       } else {
         const { data } = await axios.post(
-          "https://movies-app-crud-backend.herokuapp.com/logout",
+          "https://movie-app-crud-mern.herokuapp.com/logout",
           {},
           {
             withCredentials: true,

@@ -16,7 +16,7 @@ function LoginPage() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const { data } = await axios.post("https://movies-app-crud-backend.herokuapp.com/login", {
+            const { data } = await axios.post("https://movie-app-crud-mern.herokuapp.com/login", {
                 ...values,
             }, { withCredentials: true, });
 

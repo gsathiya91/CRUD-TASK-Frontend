@@ -10,14 +10,14 @@ function EditMovies(){
     const [movies, setMovies] = useState([]);
     useEffect(() => {
         const getBookDetails = async () => {
-            var response = await axios.get('https://movies-app-crud-backend.herokuapp.com/getallmovies');
+            var response = await axios.get('https://movie-app-crud-mern.herokuapp.com/getallmovies');
             setMovies(response.data)
         }    
         getBookDetails();
     }, []);
 
    const handleDelete=async(id)=>{
-     axios.delete(`https://movies-app-crud-backend.herokuapp.com/deletemovies/${id}`)
+     axios.delete(`https://movie-app-crud-mern.herokuapp.com/deletemovies/${id}`)
     navigate("/allmovies");
    }
     return(

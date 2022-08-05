@@ -5,7 +5,7 @@ function AllMovies(){
     const [movies, setMovies] = useState([]);
     useEffect(() => {
         const getBookDetails = async () => {
-            var response = await axios.get('https://movies-app-crud-backend.herokuapp.com/getallmovies');
+            var response = await axios.get('https://movie-app-crud-mern.herokuapp.com/getallmovies');
             setMovies(response.data)
         }    
         getBookDetails();

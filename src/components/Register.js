@@ -16,7 +16,7 @@ function RegisterPage() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const { data } = await axios.post("https://movies-app-crud-backend.herokuapp.com/register", {
+            const { data } = await axios.post("https://movie-app-crud-mern.herokuapp.com/register", {
                 ...values,
             }, { withCredentials: true, });
 

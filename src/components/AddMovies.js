@@ -24,7 +24,7 @@ function AddMovies() {
     const handleSubmit = async e => {
         e.preventDefault();
         try {
-            const response = await axios.post(`https://movies-app-crud-backend.herokuapp.com/addnewmovies`, {
+            const response = await axios.post(`https://movie-app-crud-mern.herokuapp.com/addnewmovies`, {
                 movieName: String(inputs.movieName),
                 rating: Number(inputs.rating),
                 cast: String(inputs.cast),
