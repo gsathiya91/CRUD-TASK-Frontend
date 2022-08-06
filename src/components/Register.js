@@ -75,7 +75,6 @@ function RegisterPage() {
                 <button type="submit" className="btn btn-info">Submit</button><br />
                 <span className="text">Already Registered! <Link to="/login">Login</Link></span>
             </form>
-            <ToastContainer />
         </div>
     )
 }

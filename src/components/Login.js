@@ -26,7 +26,7 @@ function LoginPage() {
                      if (email) generateError(email);
                     else if (password) generateError(password);
                 } else {
-                    navigate("/")
+                    navigate("/allmovies")
                 }
             }
         } catch (err) {

@@ -24,6 +24,7 @@ function EditMovies(){
         <div className="containers">
             <div className="tables">
             <h2>List of Movies</h2>
+            <Button class="btn btn-warning" onClick={()=>navigate("/")}>Logout</Button>
             <table class="table table-bordered">
                 <thead className="head">
                     <tr class="bg-info">

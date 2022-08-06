@@ -27,8 +27,8 @@ function NavBar() {
                         LinkComponent={NavLink} to="/addmovies"/>
                         <Tab id="tab" label="Edit Movies"
                         LinkComponent={NavLink} to="/editmovies"/>
-                        <Tab id="tab" label="Logout"
-                        LinkComponent={NavLink} to="/" />
+                        <Tab id="tab" label="Register"
+                        LinkComponent={NavLink} to="/register" />
                     </Tabs>
                 </Toolbar>
             </AppBar>
