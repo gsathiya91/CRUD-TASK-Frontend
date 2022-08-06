@@ -18,6 +18,7 @@ function EditMovies(){
 
    const handleDelete=async(id)=>{
      axios.delete(`https://movie-app-crud-mern.herokuapp.com/deletemovies/${id}`)
+    navigate("/editmovies");
     navigate("/allmovies");
    }
     return(
